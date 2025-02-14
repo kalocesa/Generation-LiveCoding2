@@ -19,6 +19,7 @@ formulario.onsubmit = function (e) {
   /* Se agrega el imprimir en consola la opción elegida en nacionalidad */
   console.log(nacionalidadOpcion);
 
+  /* El elemento nextElementSibling nos ayuda a acceder al elemento hermano siguiente en el DOM y poder mostrar mensajes */
   const nombreError = nombreInput.nextElementSibling;
   const edadError = edadInput.nextElementSibling;
   /* Se generan arrow functions para cada tipo de input, señalar la clase error o quitarla */

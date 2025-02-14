@@ -12,30 +12,41 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.formulario {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
+header {
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
 
-  /* Se inserta div para manejar la disposición de los elementos */
-  div {
+section {
+  max-width: 400px;
+  margin: auto;
+
+  .formulario {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 15px;
-  }
+    width: 400px;
 
-  /* Se inserta las etiquetas dentro de la class formulario para no repetir código */
-  input,
-  select {
-    border: none;
-    height: 20px;
-    border-radius: 5px;
-  }
+    /* Se inserta div para manejar la disposición de los elementos */
+    div {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 15px;
+    }
 
-  /* Se cambia la propiedad valor */
-  .error {
-    font-size: 16px;
+    /* Se inserta las etiquetas dentro de la class formulario para no repetir código */
+    input,
+    select {
+      border: none;
+      height: 20px;
+      border-radius: 5px;
+    }
+
+    /* Se cambia la propiedad valor */
+    .error {
+      font-size: 16px;
+    }
   }
 }
 
