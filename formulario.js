@@ -58,13 +58,6 @@ formulario.onsubmit = function (e) {
   inputsValidos();
 };
 
-var botonBorrar = document.createElement("button");
-botonBorrar.textContent = "Eliminar invitado";
-botonBorrar.id = "boton-borrar";
-var corteLinea = document.createElement("br");
-document.body.appendChild(corteLinea);
-document.body.appendChild(botonBorrar);
-
 function agregarInvitado(nombre, edad, nacionalidad) {
   if (nacionalidad === "ar") {
     nacionalidad = "Argentina";
@@ -75,6 +68,13 @@ function agregarInvitado(nombre, edad, nacionalidad) {
   } else if (nacionalidad === "per") {
     nacionalidad = "Peruana";
   }
+
+  var botonBorrar = document.createElement("button");
+  botonBorrar.textContent = "Eliminar invitado";
+  botonBorrar.id = "boton-borrar";
+  var corteLinea = document.createElement("br");
+  document.body.appendChild(corteLinea);
+  document.body.appendChild(botonBorrar);
 
   var lista = document.getElementById("lista-de-invitados");
 

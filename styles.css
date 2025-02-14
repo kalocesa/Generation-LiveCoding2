@@ -50,6 +50,10 @@ section {
   }
 }
 
+h2 {
+  text-align: center;
+}
+
 .elemento-lista {
   color: #4b1248;
   font-family: Verdana;
