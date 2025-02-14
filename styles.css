@@ -1,7 +1,15 @@
 body {
   background: #f0c27b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f0c27b, #4b1248); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(
+    to right,
+    #f0c27b,
+    #4b1248
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f0c27b,
+    #4b1248
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .formulario {
@@ -9,16 +17,25 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-}
 
-.formulario input, select {
-  border: none;
-  height: 20px;
-  border-radius: 5px;
-}
+  /* Se inserta div para manejar la disposición de los elementos */
+  div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
 
-.error {
-  background-color: red;
+  /* Se inserta las etiquetas dentro de la class formulario para no repetir código */
+  input,
+  select {
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .error {
+    background-color: red;
+  }
 }
 
 .elemento-lista {
@@ -29,7 +46,7 @@ body {
   border-radius: 5px;
   padding: 0 5px;
   width: 400px;
-  margin: 20px
+  margin: 20px;
 }
 
 .elemento-lista input {
