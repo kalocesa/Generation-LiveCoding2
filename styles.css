@@ -33,8 +33,9 @@ body {
     border-radius: 5px;
   }
 
+  /* Se cambia la propiedad valor */
   .error {
-    background-color: red;
+    font-size: 16px;
   }
 }
 

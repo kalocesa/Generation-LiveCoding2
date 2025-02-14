@@ -19,21 +19,27 @@
   <!-- Etiqueta main por html semántico -->
   <main>
     <!-- Etiqueta section por html semántico -->
+    <!-- Se agrega el quitar los estilos predeterminados por el navegador para escribirlos con js -->
     <section>
-      <form class="formulario">
+      <form class="formulario" novalidate>
         <!-- Se genera una etiqueta label en todos los inputs para generar semántica y código limpio -->
         <!-- Se quitan br y se agregan div -->
+        <!-- Se le agrega el required -->
+        <!-- Se agrega el span para que marque el error -->
         <div>
-          <label for="">Nombre</label>
-          <input type="text" name="name" id="name">
+          <label for="nombre">Nombre</label>
+          <!-- Se le cambia nombre del ID -->
+          <input type="text" name="nombre" id="nombre" required>
+          <span class="error"></span>
         </div>
         <div>
-          <label for="">Edad</label>
-          <input type="number" name="age" id="age">
+          <label for="edad">Edad</label>
+          <input type="number" name="edad" id="edad" required>
+          <span class="error"></span>
         </div>
         <div>
-          <label for="">Nacionalidad</label>
-          <select name="nationality" id="nationality">
+          <label for="nacionalidad">Nacionalidad</label>
+          <select name="nacionalidad" id="nacionalidad" required>
             <option value="ar">Argentina</option>
             <option value="mx">Mexicana</option>
             <option value="per">Peruana</option>
