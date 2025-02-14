@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"><!-- idioma español -->
 
 <head>
   <meta charset="UTF-8">
@@ -8,17 +8,23 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
   <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
+    <!-- Se genera una etiqueta label en todos los inputs para generar semántica y código limpio -->
+    <!-- Se agrega espacio para mayor legibilidad entre cada label-->
+    <label for="">Nombre</label>
+    <input type="text" name="name" id="name">
     <br />
 
-    Nacionalidad
+    <label for="">Edad</label>
+    <input type="number" name="age" id="age">
+    <br />
+
+    <label for="">Nacionalidad</label>
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -26,15 +32,16 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+
+    <button type="submit">Enviar</button> <!-- Se cambia input por etiqueta button -->
+
   </form>
 
   <div>
-    <h2>Lista de invitados</h2>
-
+    <h2>Lista de invitados</h2> <!-- Se quita espacio entre la etiqueta de cierre div y el h2 -->
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script> <!-- Se corrige ruta -->
 </body>
 
 </html>
